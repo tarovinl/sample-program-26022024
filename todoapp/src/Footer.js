@@ -6,7 +6,7 @@ function Footer({ items }) {
   return (
     <div>
       <p>
-        You have <b>{itemCount}</b> item in your lists, and you already
+        You have <b>{itemCount}</b> task in your list, and you have already
         completed <b>{itemCheckedCount}</b>, {percentage}%
       </p>
     </div>

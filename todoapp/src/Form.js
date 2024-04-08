@@ -3,13 +3,12 @@ function Form({ onAddItem }) {
   const [name, setName] = useState("");
   const [quantity, setQuantity] = useState(1);
   function handleSubmit(e) {
-    e.preventDefault(); //para mawala yung reload
-    if (!name) return; //if walang name, return nothing
+    e.preventDefault();
+    if (!name) return;
     const newItem = { name, quantity, isChecked: false, id: Date.now() };
     console.log(newItem);
     setName("");
     setQuantity(1);
-    //handleAddItem(newItem);
     onAddItem(newItem);
   }
   return (

@@ -229,7 +229,7 @@ button i {
   transition: background-color 0.3s ease;
 }
 .sort-select:hover {
-  background-color: #2980b9;
+  background-color: #182823;
 }
 .TodoForm {
   display: flex; /* Use flexbox to align items horizontally */
@@ -254,7 +254,7 @@ button i {
   font-size: 16px;
 }
 .todo-btn:hover {
-  background-color: #2e5043;
+  background-color: #182823;
 }
 p {
   margin-top: 30px;
