@@ -1,26 +1,20 @@
+import { faHandPointLeft } from "@fortawesome/free-solid-svg-icons";
 import Item from "./Item";
-
-function ItemList({ items, onDeleteItem, onCheckedItem }) {
+function ItemList({ items, onDeleteItem, onCheckedItem, onEditItem }) {
   return (
-    <div id="myUnordList">
-      <ul className="todo-list">
+    <div>
+      <ul>
         {items.map((item) => (
           <Item
             itemList={item}
-            key={item.id}
+            key={item.name}
             onDeleteItem={onDeleteItem}
-            onCheckeditem={onCheckedItem}
+            onCheckedItem={onCheckedItem}
+            onEditItem={onEditItem}
           />
         ))}
       </ul>
     </div>
   );
 }
-
 export default ItemList;
-
-// const item = [
-//   { id: 1, quantity: "1", name: "Milk", isChecked: false },
-//   { id: 2, quantity: "2", name: "Coffee", isChecked: false },
-//   { id: 3, quantity: "3", name: "Sugar", isChecked: false },
-// ];
