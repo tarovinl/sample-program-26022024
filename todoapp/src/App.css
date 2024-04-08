@@ -168,7 +168,7 @@ button i {
 .item-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 10px;
   background-color: #f8a942;
   border-radius: 5px;
@@ -179,14 +179,15 @@ button i {
 }
 .item-name {
   font-size: 23px;
-  margin-right: 10px;
+  margin-left: 50px;
+  margin-bottom: 20px;
   font-weight: bold;
   color: #595857;
 }
 .item-quantity {
   font-size: 16px;
   color: white;
-  margin-right: 10px;
+  margin-right: 550px;
 }
 .item-icons {
   display: flex;

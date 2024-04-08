@@ -15,6 +15,7 @@ function Item({ itemList, onDeleteItem, onCheckedItem, onEditItem }) {
         <EditTodoForm task={itemList} editTodo={handleEditTodo} />
       ) : (
         <div className="item-details">
+          <div className="item-quantity">{itemList.quantity}</div>
           <div
             className="item-name"
             style={{
@@ -25,7 +26,6 @@ function Item({ itemList, onDeleteItem, onCheckedItem, onEditItem }) {
           >
             {itemList.name}
           </div>
-          <div className="item-quantity">{itemList.quantity}</div>
         </div>
       )}
       <div className="item-icons">
