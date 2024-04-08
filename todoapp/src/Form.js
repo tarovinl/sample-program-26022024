@@ -16,29 +16,31 @@ function Form({ onAddItem }) {
   }
 
   return (
-    <div id="app">
-      <form onSubmit={handleSubmit}>
-        <select
-          className="check-style"
-          value={quantity}
-          onChange={(e) => setQuantity(Number(e.target.value))}
-        >
-          {/* <option value={1}>1</option> */}
-          {Array.from({ length: 20 }, (_, i) => i + 1).map((num) => (
-            <option value={num} key={num}>
-              {num}
-            </option>
-          ))}
-        </select>
-        <input
-          className="input-box"
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Insert Task"
-        />
-        <button className="btn_add">Add</button>
-      </form>
+    <div className="to-doform">
+      <div id="app">
+        <form onSubmit={handleSubmit}>
+          <select
+            className="check-style"
+            value={quantity}
+            onChange={(e) => setQuantity(Number(e.target.value))}
+          >
+            {/* <option value={1}>1</option> */}
+            {Array.from({ length: 20 }, (_, i) => i + 1).map((num) => (
+              <option value={num} key={num}>
+                {num}
+              </option>
+            ))}
+          </select>
+          <input
+            className="input-box"
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Insert Task"
+          />
+          <button className="btn_add">Add</button>
+        </form>
+      </div>
     </div>
   );
 }

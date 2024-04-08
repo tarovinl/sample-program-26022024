@@ -44,12 +44,14 @@ function App() {
   return (
     <div className="App">
       <h1>To-Do List</h1>
-      <Form onAddItem={handleAddItem} />
-      <ItemList
-        items={sortedItems}
-        onDeleteItem={handleDeleteItem}
-        onCheckedItem={handleChecked}
-      />
+      <div className="to-doform">
+        <Form onAddItem={handleAddItem} />
+        <ItemList
+          items={sortedItems}
+          onDeleteItem={handleDeleteItem}
+          onCheckedItem={handleChecked}
+        />
+      </div>
 
       <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
         <option value="input">Sort by input</option>

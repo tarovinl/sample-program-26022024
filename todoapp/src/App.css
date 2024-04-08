@@ -1,15 +1,30 @@
+/* src/fonts.css */
+@font-face {
+  font-family: "Brice-Bold Semi Expanded";
+  src: url("../public/fonts/Brice-BoldSemiExpanded.otf") format("opentype");
+}
+
 .App {
   text-align: center;
-  background-color: #f5f5f5;
+  background-color: #f4b301;
   padding: 20px;
-  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-family: "Brice-Bold Semi Expanded", sans-serif;
+  font-size: 64px;
+  -webkit-text-stroke-color: #1d1d1b;
+  -webkit-text-stroke-width: 2px;
+  background: linear-gradient(to right, #e195b0, #95eada);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .btn_add {
   background-color: #4caf50;
   color: white;
   padding: 10px 20px;
-  margin: 10px 0;
+  margin: 15px 0;
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -26,6 +41,6 @@
 }
 
 #app {
-  width: 80%;
+  width: 50%;
   margin: auto;
 }
